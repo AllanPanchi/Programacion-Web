@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Componentes de PC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Formulario de Componentes de PC</h2>
+  <form action="formComponentsPost.html" method="get">
+    <label for="nombre">Nombre de la PC:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="procesador">Procesador:</label>
+    <input type="text" id="procesador" name="procesador" required>
+
+    <label for="memoria">Memoria RAM:</label>
+    <input type="text" id="memoria" name="memoria" required>
+
+    <label for="almacenamiento">Almacenamiento:</label>
+    <input type="text" id="almacenamiento" name="almacenamiento" required>
+
+    <label for="tarjeta-video">Tarjeta de Video:</label>
+    <input type="text" id="tarjeta-video" name="tarjeta-video" required>
+
+    <label for="sistema-operativo">Sistema Operativo:</label>
+    <select id="sistema-operativo" name="sistema-operativo" required>
+      <option value="windows">Windows</option>
+      <option value="macos">macOS</option>
+      <option value="linux">Linux</option>
+      <option value="otros">Otros</option>
+    </select>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
