@@ -11,7 +11,7 @@
 
     body {
         min-height: 100vh;
-        max-width: 200px;
+        max-width: 80%;
         background-color: papayawhip;
         margin: 0 auto;
     }
@@ -22,7 +22,7 @@
         color: #fff;
     }
 
-    .nav {
+    nav {
         background-color: #71629a;
     }
 
@@ -40,10 +40,60 @@
         background-color: rgb(152, 152, 122);
     }
 
-    .footer {
+    footer {
         background-color: #8a5588;
+        color: #fff;
     }
+
+    .h3 {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .article{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .article__section{
+        background-color: #f22a5f;
+        width: 150px;
+        
+    }
+
+    .article__section-h3, .article__section-h2, .article__section-p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .article__section-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .aside{
+        width: 100%;
+        background-color: black;
+        color: white;
+    
+    }
+
+    .footer__img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer__p{
+        font-size: 14px;
+        position: relative;
+        
+    }
+
 </style>
+
+<!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
 
 <head>
     <title>Pagina web en conjunto</title>
@@ -53,24 +103,38 @@
     <header class="titulo">
         <h1>Titulo de la pagina</h1>
     </header>
-    <nav class="nav">
+    <nav>
         <ul class="nav__ul">
             <li class="nav__ul-li"><a class="nav__ul-li-a" href="#">Inicio</a></li>
             <li class="nav__ul-li"><a class="nav__ul-li-a" href="#">Quienes somos</a></li>
             <li class="nav__ul-li"><a class="nav__ul-li-a" href="#">Contacto</a></li>
         </ul>
     </nav>
+    <h2 class="h2">ESTE ES EL PRINCIPIO DEL ARTICULO</h2>
     <article class="article">
-        <h2 class="article-h2">ESTE ES EL PRINCIPIO DEL ARTICULO</h2>
         <section class="article__section">
             <h3 class="article__section-h3">Titulo del articulo</h3>
+            <h4 class="article__section-h2"> Esto es una sección</h4>
             <p class="article__section-p">Lorem ipsum dolor</p>
         </section>
+        <section class="article__section">
+            <h3 class="article__section-h3">Titulo del articulo</h3>
+            <h4 class="article__section-h2"> Esto es una sección</h4>
+            <p class="article__section-p">Lorem ipsum dolor</p>
+        </section>
+        <section class="article__section">
+            <img class="article__section-img" src="https://th.bing.com/th/id/OIP.G9bOY2yh5QJ1f3EJ4I_c4AAAAA?rs=1&pid=ImgDetMain" alt="Link">
+        </section>
     </article>
-    <footer class="footer">
+    <aside class="aside">
+            <h2>AAAAAAAAAAAAA</h2>
+    </aside>
+    <footer>
         <p>By:</p>
         <p>Allan Panchi</p>
         <p>Alejandro Andrade</p>
+        <img class="footer__img" src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook">
+        <p class="footer__p">REDES SOCIALES</p>
     </footer>
 </body>
 

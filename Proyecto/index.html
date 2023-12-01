@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<style>
+    
+    /*
+    Colores:
+    1 - #61EDDB Celeste
+    2 - #F0E1AA Beige
+    3 - #EDA4EB Rosa pastel
+    4 - #A450A1 Rosa fuerte
+    5 - #647876 Gris
+    */
+
+    html {
+        height: 100%;
+    }
+
+    .body {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #A450A1;
+        font-family: 'Libre Baskerville', serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .article {
+        background-color: #EDA4EB;
+        border-radius: 10px;
+        min-width: 400px;
+    }
+
+    .article__h2 {
+        text-align: center;
+        margin: 20px;
+        padding: 0;
+    }
+    
+    .form-LogIn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-LogIn__article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-LogIn__h2 {
+        margin: 30px;
+        padding: 0;
+    }
+
+    .form-LogIn__article-section-input, .form-LogIn__article-section-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        padding: 0;
+    }
+
+    .form-LogIn__article-section-input {
+        font-family: 'Libre Baskerville', serif;
+        text-align: center;
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .form-LogIn__input {
+        transition: all 0.3s ease;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        margin: 20px;
+    }
+
+    .form-LogIn__input:hover {
+        background-color: #647876;
+        cursor: pointer;
+        color: #fff;
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <title>Log In</title>
+</head>
+<body class="body">
+    <article class="article">
+        <h2 class="article__h2">Log In</h2>
+        <form class="form-LogIn" action="" method="">
+            <article class="form-LogIn__article">
+                <section class="form-LogIn__article-section">
+                    <label class="form-LogIn__article-section-label" for="user">User:</label>
+                    <label class="form-LogIn__article-section-label" for="pass">Password:</label>
+                </section>
+                <section class="form-LogIn__article-section">
+                    <input class="form-LogIn__article-section-input" type="text" name="user" id="user" required>
+                    <input class="form-LogIn__article-section-input" type="password" name="pass" id="pass" required>
+                </section>
+            </article>
+            <input class="form-LogIn__input" type="submit" value="Submit">
+        </form>
+    </article>
+</body>
+</html>
