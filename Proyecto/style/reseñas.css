@@ -41,7 +41,6 @@ body {
 
 .nav__ul {
     display: flex;
-    flex-direction: row;
     justify-content: start;
     align-items: center;
     list-style: none;
@@ -54,8 +53,7 @@ body {
     border-top-right-radius: 5px;
     color: #fff;
     font-size: 18px;
-    padding: 10px 10px;
-    padding-bottom: 20px;
+    padding: 10px 10px 20px;
 }
 
 .nav__ul-li {
@@ -87,8 +85,6 @@ body {
 
 .contenedor {
     margin-top: 120px;
-    top: 120px;
-    bottom: 0;
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -103,7 +99,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    top: 50px;
     margin-top: 50px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;

@@ -8,7 +8,7 @@ function crearArticulos()
                             <h1>Titulo</h1>
                             <h2>Fecha</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste ea perferendis unde illum dolor ipsa!</p>
-                            <a href="#">Leer más ...</a>
+                            <a href="reseña.php">Leer más ...</a>
                         </article>';
     }
 }
