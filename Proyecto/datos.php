@@ -1,38 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php
-        $nombre = $_POST["campoNombre"];
-        $apellido = $_POST["campoApellido"];
-        $correo = $_POST["campoEmail"];
-        $telefono = $_POST["campoTelefono"];
-        $fechaNacimiento = $_POST["campoFechaNacimiento"];
-        $usuario = $_POST["campoUsuario"];
-        $contrasena = $_POST["campoContrasena"];
-        $direccion = $_POST["campoDireccion"];
-        $genero = $_POST["campoGenero"];
+<?php
 
+    $nombre = $_POST["campoNombre"];
+    $apellido = $_POST["campoApellido"];
+    $correo = $_POST["campoEmail"];
+    $telefono = $_POST["campoTelefono"];
+    $fechaNacimiento = $_POST["campoFechaNacimiento"];
+    $usuario = $_POST["campoUsuario"];
+    $contrasena = $_POST["campoContrasena"];
+    $direccion = $_POST["campoDireccion"];
+    $genero = $_POST["campoGenero"];
+    $ruta_destino = "uploads/" . basename($_FILES["foto_perfil"]["name"]);
+    move_uploaded_file($_FILES["foto_perfil"]["tmp_name"], $ruta_destino);
 
+    $redirect_to = isset($_POST['redirect_to']) ? $_POST['redirect_to'] : 'login.php';
+    session_start();
+    $_SESSION["nombre"] = $nombre;
+    $_SESSION["apellido"] = $apellido;
+    $_SESSION["correo"] = $correo;
+    $_SESSION["telefono"] = $telefono;
+    $_SESSION["fechaNacimiento"] = $fechaNacimiento;
+    $_SESSION["usuario"] = $usuario;
+    $_SESSION["contrasena"] = $contrasena;
+    $_SESSION["direccion"] = $direccion;
+    $_SESSION["genero"] = $genero;
+    $_SESSION["rutaImagen"] = $ruta_destino;
 
-        $redirect_to = isset($_POST['redirect_to']) ? $_POST['redirect_to'] : 'login.php';       
-        session_start();
-        $_SESSION["nombre"] = $nombre;
-        $_SESSION["apellido"] = $apellido;
-        $_SESSION["correo"] = $correo;
-        $_SESSION["telefono"] = $telefono;
-        $_SESSION["fechaNacimiento"] = $fechaNacimiento;
-        $_SESSION["usuario"] = $usuario;
-        $_SESSION["contrasena"] = $contrasena;
-        $_SESSION["direccion"] = $direccion;
-        $_SESSION["genero"] = $genero;
-
-        header("Location: $redirect_to");
-        exit();
-    ?>
-</body>
-</html>
+    header("Location: $redirect_to");
+    exit();
+?>

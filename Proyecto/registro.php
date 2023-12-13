@@ -135,7 +135,7 @@
             </section>
             <hr>
             <h1>REGISTRARSE</h1>
-            <form action=datos.php method="POST">
+            <form action="datos.php" method="POST" enctype="multipart/form-data">
                 <section class="campo">                    
                     <input type="text" name="campoNombre" id="nombre" placeholder="Nombre">
                 </section>
@@ -152,11 +152,8 @@
                     <input type="text" name="campoUsuario" id="usuario" placeholder="Usuario" required>
                 </section>
                 <section class="campo">
-                    <input type="text" name="campoContrasena" id="contrasena" placeholder="Contraseña" required>
-                </section>
-                <section class="campo">
-                    <input type="text" name="campoConfirmarContrasena" id="confirmarContrasena" placeholder="Confirmar Contraseña" required>
-                </section>    
+                    <input type="password" name="campoContrasena" id="contrasena" placeholder="Contraseña" required>
+                </section>  
                 <section class="campo">
                     <label for="fechaNacimiento">
                         Fecha de Nacimiento
@@ -164,13 +161,13 @@
                     <input type="date" name="campoFechaNacimiento" id="fechaNacimiento">
                 </section>
                 <section class="campo"> 
-                    <textarea placeholder="Dirección" rows="4"  id="direccion" name="campoDireccion" ></textarea>
+                    <textarea placeholder="Dirección" rows="4"  id="direccion" name="campoDireccion"></textarea>
                 </section>
                 <section class="campo">
                     <label for="genero">
                         Género:
                     </label>
-                    <select name="campoGenero" id="genero">
+                    <select name="campoGenero" id="genero" required>
                         <option value="masculino">
                             Masculino
                         </option>
@@ -186,7 +183,7 @@
                     <label for="fotoPerfil">
                         Sube tu foto de perfil:
                     </label>
-                    <input class="input_archivo" type="file" id="foto_perfil">
+                    <input class="input_archivo" type="file" name="foto_perfil" id="foto_perfil">
                 </section>
                 <a href="login.php">¿Ya tienes cuenta?</a>
                 <input class="btn_registrar" type="submit" name="guardar" value="Registrarse">

@@ -1,3 +1,23 @@
+<?php
+session_start();
+
+function esUsuario()
+{
+    if ($_SESSION) {
+        echo '<ul class="nav__ul nav__ul--sesion">';
+        echo '<li class="nav__ul-li nav__ul-li--sesion"><a href="revisarperfil.php">Perfil</a></li>';
+        echo '<li class="nav__ul-li nav__ul-li--sesion"><a href="cerrarSesion.php">Cerrar Sesión</a></li>';
+        echo '</ul>';
+    } else {
+        echo '<ul class="nav__ul nav__ul--sesion">';
+        echo '<li class="nav__ul-li nav__ul-li--sesion"><a href="login.php">Iniciar Sesión</a></li>';
+        echo '<li class="nav__ul-li nav__ul-li--sesion"><a href="registro.php">Registrarse</a></li>';
+        echo '</ul>';
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -19,13 +39,11 @@
     <nav class="nav">
         <ul class="nav__ul">
             <li class="nav__ul-li"><a href="index.php">Inicio</a></li>
-            <li class="nav__ul-li"><a href="wallpapers.php">Wallpapers</a></li>
             <li class="nav__ul-li"><a href="reseñas.php">Reseñas</a></li>
         </ul>
-        <ul class="nav__ul nav__ul--sesion">
-            <li class="nav__ul-li nav__ul-li--sesion"><a href="login.php">Iniciar Sesión</a></li>
-            <li class="nav__ul-li nav__ul-li--sesion"><a href="registro.php">Registrarse</a></li>
-        </ul>
+        <?php
+        esUsuario();
+        ?>
     </nav>
     <section class="contenedor">
         <section class="contenedor__contenido">

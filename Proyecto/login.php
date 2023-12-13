@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <style>
@@ -146,11 +150,11 @@
         </section>
         <hr>
         <h2 class="article__h2">Log In</h2>
-        <form class="form-LogIn" action="" method="">
+        <form class="form-LogIn" action="index.php" method="post">
             <article class="form-LogIn__article">
                 <section class="form-LogIn__article-section">
                     <input class="form-LogIn__article-section-input" placeholder="Usuario" type="text" name="user" id="user" required>
-                    <input class="form-LogIn__article-section-input" placeholder="Contraseña"="password" name="pass" id="pass" required>
+                    <input class="form-LogIn__article-section-input" placeholder="Contraseña" type="password" name="pass" id="pass" required>
                 </section>
             </article>
             <p class="form-LogIn__msg">No tienes cuenta, registrate <span><a href="registro.php">aquí</a>.</span></p>
