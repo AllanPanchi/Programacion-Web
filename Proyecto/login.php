@@ -153,7 +153,7 @@
                     <input class="form-LogIn__article-section-input" placeholder="Contraseña"="password" name="pass" id="pass" required>
                 </section>
             </article>
-            <p class="form-LogIn__msg">No tienes cuenta, registrate <span><a href="registro.html">aquí</a>.</span></p>
+            <p class="form-LogIn__msg">No tienes cuenta, registrate <span><a href="registro.php">aquí</a>.</span></p>
             <button class="form-LogIn__input" type="submit">Ingresar</button>
         </form>
     </article>
