@@ -38,7 +38,7 @@ function esUsuario()
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/reseñas.css">
+    <link rel="stylesheet" type="text/css" href="./style/reseñas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
@@ -65,7 +65,7 @@ function esUsuario()
             <hr class="hr-top">
             <section class="contenedor__subcontenido">
                 <section class="contenedor__subcontenido-left">
-                    <h1>Categorias</h1>
+                    <h1 class="contenedor__subcontenido-categorias">Categorias</h1>
                     <section>
                         <ul class="categorias">
                             <li><a href="#">Shooter</a></li>
