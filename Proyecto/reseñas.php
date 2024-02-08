@@ -48,7 +48,7 @@ function esUsuario()
 <body>
     <header class="header">
         <img class="header__logo" src="Images/logo.png">
-        <h1 class="header__titulo">GameLib</h1>
+        <h1 class="header__titulo"><span>GameLib</span></h1>
     </header>
     <nav class="nav">
         <ul class="nav__ul">
