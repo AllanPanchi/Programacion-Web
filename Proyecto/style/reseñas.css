@@ -64,10 +64,6 @@ body {
     margin-left: 20px;
 }
 
-.nav__ul-li a:hover {
-    background-color: #172362;
-}
-
 .nav__ul-li--sesion {
     margin-left: 0px;
     margin-right: 20px;
