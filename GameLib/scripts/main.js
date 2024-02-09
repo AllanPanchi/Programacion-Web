@@ -53,3 +53,12 @@ document.getElementById('btn-close-logIn').addEventListener('click', function ()
         }
     }
 });
+
+document.getElementById('form-LogIn').addEventListener('submit', function (event) {
+    event.preventDefault();
+    
+    localStorage.setItem('user', document.getElementById('user').value);
+    localStorage.setItem('pass', document.getElementById('pass').value);
+
+    window.location.href = 'pages/juegos.html';
+});

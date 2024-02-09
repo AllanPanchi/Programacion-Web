@@ -162,6 +162,16 @@ hr {
     border-radius: 5px;
     border: none;
     margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e334e5c;
+}
+
+.form-LogIn__input:hover {
+    background-color: #2E334E;
+    cursor: pointer;
+    color: #fff;
 }
 
 .form-LogIn__msg {
@@ -192,18 +202,6 @@ hr {
     color: #000;
     cursor: default;
     font-size: 0.8rem;
-}
-
-.form-LogIn__input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-LogIn__input:hover {
-    background-color: #2E334E;
-    cursor: pointer;
-    color: #fff;
 }
 
 .contenedor__contenido-img {
@@ -318,7 +316,7 @@ hr {
     justify-content: center;
     box-shadow: 0px 0px 10px 0px #ffffff;
     border-radius: 10px;
-    width: 300px;
+    width: 250px;
     height: 100px;
     transition: all 0.3s ease;
     background-color: #fff;
@@ -430,8 +428,7 @@ hr {
 
 .celda:hover {
     box-shadow: 0px 0px 10px 0px #fff;
-    width: 100%;
-    height: 230px;
+    transform: scale(1.1);
 }
 
 footer {
