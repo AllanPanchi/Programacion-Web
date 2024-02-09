@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
     <title>Document</title>
 </head>
+
 <body>
-      
+    <header class="cabeza">
+        <section class="fondo"></section>
+        <section class="logIn__body logInHide">
+            <section class="logIn logInHide" id="logIn">
+                <section class="logIn__article logInHide">
+                    <section class="marca logInHide">
+                        <section class="marca__left logInHide">
+                            <img class="logo logInHide" src="Images/logo.png">
+                            <h1 class="marca__titulo logInHide">GameLib</h1>
+                        </section>
+                        <button class="btn-close-logIn logInHide" id="btn-close-logIn"><img class="close logInHide"
+                                src="images/close.png" alt=""></button>
+                    </section>
+                    <hr>
+                    <form class="form-LogIn logInHide" action="index.php" method="post">
+                        <article class="form-LogIn__article logInHide">
+                            <section class="form-LogIn__article-section logInHide">
+                                <input class="form-LogIn__article-section-input logInHide" placeholder="Usuario"
+                                    type="text" name="user" id="user" required>
+                                <input class="form-LogIn__article-section-input logInHide" placeholder="Contraseña"
+                                    type="password" name="pass" id="pass" required>
+                            </section>
+                        </article>
+                        <p class="form-LogIn__msg logInHide"><a href="registro.php">aquí</a></p>
+                        <button class="form-LogIn__input logInHide" type="submit">Ingresar</button>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <nav class="top">
+            <ul class="top__opciones">
+                <li class="top__opciones"><a href="index.html"><img class="logo" src="images/logo.png">
+                        <p>GameLib</p>
+                    </a></li>
+                <li class="top__opciones top__opciones-right"><button class="opcion" id="btn-logIn">Iniciar
+                        Sesión</button>
+                </li>
+                <li class="top__opciones"><button class="opcion" id="btn-registro">Registo</button></li>
+                <li class="top__opciones"><a class="opcion" href="pages/juegos.html">Juegos</a></li>
+                <li class="top__opciones"><a class="opcion" href="listas.html">Listas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="cuerpo">
+        <aside class="aside">
+            <p class="aside__eslogan">"Descubre, conoce y comparte en este lugar donde tus reseñas se convierten en inspiración"</p>
+        </aside>
+
+        <hr class="line">
+
+        <div class="resenas">
+            <div class="celda"><img src="images/imagesJuegos/ApexLegends.jpg"></div>
+            <div class="celda"><img src="images/imagesJuegos/Cyberpunk.jpg"></div>
+            <div class="celda"><img src="images/imagesJuegos/Overwatch.jpg"></div>
+            <div class="celda"><img src="images/imagesJuegos/GTAV.png"></div>
+            <div class="celda"><img src="images/imagesJuegos/RDR2.jpg"></div>
+            <div class="celda"><img src="images/imagesJuegos/Asphalt8.jpg"></div>
+        </div>
+
+        <hr class="line">
+
+        <p class="p">GameLib te ofrece...</p>
+
+        <section class="contenedor">
+            <section class="contenedor__contenido contenedor__contenido-conoce">
+                <h2 class="contenedor__contenido-titulo">Conoce</h2>
+                <p class="contenedor__contenido-parrafo contenedor__contenido-parrafo-conoce">.</p>
+                <img class="contenedor__contenido-img" src="Images/magnifier.png">
+            </section>
+            <section class="contenedor__contenido contenedor__contenido-comparte">
+                <h2 class="contenedor__contenido-titulo">Comparte</h2>
+                <p class="contenedor__contenido-parrafo contenedor__contenido-parrafo-comparte">.</p>
+                <img class="contenedor__contenido-img" src="Images/share.png">
+            </section>
+            <section class="contenedor__contenido contenedor__contenido-publica">
+                <h2 class="contenedor__contenido-titulo">Publica</h2>
+                <p class="contenedor__contenido-parrafo contenedor__contenido-parrafo-publica">.</p>
+                <img class="contenedor__contenido-img" src="Images/upload.png">
+            </section>
+        </section>
+
+    </section>
+
+    <footer>
+        <p>&copy GameLib 2024</p>
+    </footer>
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>

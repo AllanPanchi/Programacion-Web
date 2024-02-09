@@ -24,7 +24,7 @@ html {
     padding: 0;
 }
 
-.article {
+.logIn__article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +62,7 @@ hr {
     padding: 0;
 }
 
-.article__h2 {
+.logIn__article__h2 {
     text-align: center;
     margin: 20px;
     padding: 0;
