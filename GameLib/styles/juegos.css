@@ -35,7 +35,7 @@ body{
     color: #fff;
     text-align: center;
     margin-bottom: 50px;
-    transition: all 1.5s ease;
+    transition: all 0.8s ease;
 }
 
 .swiper-tittle:hover {
@@ -405,7 +405,7 @@ hr {
 }
 
 .opcion {
-    color: #fff;
+    color: #fff !important;
     font-size: 1.1rem;
 }
 
