@@ -16,16 +16,24 @@ body{
 }
 
 .swiper-slide{
-    width: 300px;
-    height: 600px;
+    width: 200px;
+    height: 300px;
     background-color: #323232;
     box-shadow: 0 0 20px rgba(0,0, 0, 0.4);
     padding: 40px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-slide a{
+    position: relative;
 }
 
 img{
-    transition: filter 0.3s ease-in-out;;
+    position: relative;
+    z-index: -1;
+    transition: filter 0.3s ease-in-out;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -37,9 +45,25 @@ img{
 }
 
 .swiper-slide:hover img{
-    filter:brightness(0.7);
+    display: block;
+    background: linear-gradient(to top, #000000, #00000000);
+    filter:brightness(0.3);
     transform: scale(1.1);
     transition: all 0.3s ease;
+}
+
+.swiper-slide:hover .product-content h3{
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+
+}
+
+
+.swiper-slide:hover .product-content p{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
 }
 
 .swiper-slide:hover .oscurecer{
@@ -54,9 +78,9 @@ img{
 }
 
 .product-content{
+
     display: flex;
     justify-content: space-between;
-
 }
 
 .product-content p, h3{
