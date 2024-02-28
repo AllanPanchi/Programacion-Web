@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #575ff9;
+  margin: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+a:hover {
+  color: #747bff;
+  outline: 1px solid #747bff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #383843;
+}
+
