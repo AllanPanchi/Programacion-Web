@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
 import LogInStructure from './components/LogInStructure'
+import Footer from './components/Footer'
 import './App.css'
 import { setListeners } from './scripts/main'
+import Resena from './components/Resena'
+//import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 function App() {
 
@@ -26,7 +29,6 @@ function App() {
 
         </ul>
       </nav>
-
       <section className="cuerpo">
         <aside className="aside">
           <p className="aside__eslogan">
@@ -34,6 +36,7 @@ function App() {
           </p>
         </aside>
         <hr className="line" />
+
         <p className="p">
           Reseñas mas populares
         </p>
@@ -68,14 +71,7 @@ function App() {
         </section>
       </section>
 
-      <footer>
-        <p>© GameLib 2024</p>
-        <section className="footer__right">
-          <img className="img__footer" src="images/facebook.png" alt="" />
-          <img className="img__footer" src="images/ig.png" alt="" />
-          <img className="img__footer" src="images/threads.png" alt="" />
-        </section>
-      </footer>
+    <Footer />
 
     </>
   )
