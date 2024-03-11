@@ -15,10 +15,10 @@ const nav = () => {
                     </div>
                     <div className='top-right'>
                         <li className="top__opciones-right">
-                            <button className="opcion" id="btn-logIn">Log In</button>
+                            <button className="opcion" id="btn-resenas">Reseñas</button>
                         </li>
                         <li className="top__opciones-right">
-                            <button className="opcion" id="btn-registro">Registro</button>
+                            <button className="opcion" id="btn-logOut">Log Out</button>
                         </li>
                     </div>
                 </ul>

@@ -42,7 +42,10 @@ function LogInStructure() {
             }
         }
         if (encontrado) {
+            localStorage.setItem('user', user);
+            localStorage.setItem('pass', pass);
             window.location.href = 'http://localhost:3000/resena';
+
         } else {
             alert('Usuario o contraseña incorrectos');
         }
