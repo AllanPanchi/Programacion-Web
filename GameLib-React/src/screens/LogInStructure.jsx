@@ -10,7 +10,7 @@ function LogInStructure() {
                             <section className="marca logInHide">
                                 <section className="marca__left logInHide">
                                     <img className="logo logInHide" src="images/logo.png" />
-                                    <h1 className="marca__titulo logInHide">GameLib</h1>
+                                    <h1 className="marca__titulo logInHide">Log In</h1>
                                 </section>
                                 <button className="btn-close-logIn logInHide" id="btn-close-logIn"><img className="close logInHide"
                                     src="images/close.png" alt="" /></button>
@@ -25,7 +25,7 @@ function LogInStructure() {
                                             type="password" name="pass" id="pass" required />
                                     </section>
                                 </article>
-                                <p className="form-LogIn__msg logInHide"><a href="registro.php">aquí</a></p>
+                                <p className="form-LogIn__msg logInHide"><button id='to-registro'>aquí</button></p>
                                 <button className="form-LogIn__input logInHide" id="btn-form-logIn" type="submit">Ingresar</button>
                             </form>
                         </section>

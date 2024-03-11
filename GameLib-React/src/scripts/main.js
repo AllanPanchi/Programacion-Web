@@ -1,5 +1,5 @@
 // Bloquear el scroll
-function bloquearScroll(    ) {
+function bloquearScroll() {
     // Calcula el ancho de la barra de desplazamiento para evitar el reajuste del diseño
     var scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
 
@@ -27,6 +27,56 @@ function changeColor(id) {
 }
 
 export function setListeners() {
+
+    document.getElementById('to-registro').addEventListener('click', () => {
+        var elements = document.getElementsByClassName('registroHide');
+        var elements2 = document.getElementsByClassName('logInHide');
+        for (var i = 0; i < elements2.length; i++) {
+            elements2[i].style.display = 'none';
+        }
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'flex';
+        }
+    });
+
+    document.getElementById('to-login').addEventListener('click', () => {
+        var elements = document.getElementsByClassName('logInHide');
+        var elements2 = document.getElementsByClassName('registroHide');
+        for (var i = 0; i < elements2.length; i++) {
+            elements2[i].style.display = 'none';
+        }
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'flex';
+        }
+    });
+
+    document.getElementById('btn-registro').addEventListener('click', () => {
+        var elements = document.getElementsByClassName('registroHide');
+        for (var i = 0; i < elements.length; i++) {
+            if (elements[i].style.display == 'flex') {
+                elements[i].style.display = 'none';
+                desbloquearScroll();
+                console.log('salir');
+            } else {
+                elements[i].style.display = 'flex';
+                bloquearScroll();
+                console.log('entrar');
+            }
+        }
+    });
+
+    document.getElementById('btn-close-registro').addEventListener('click', () => {
+        var elements = document.getElementsByClassName('registroHide');
+        for (var i = 0; i < elements.length; i++) {
+            if (elements[i].style.display == 'flex') {
+                elements[i].style.display = 'none';
+                desbloquearScroll();
+            } else {
+                elements[i].style.display = 'flex';
+                bloquearScroll();
+            }
+        }
+    });
 
     document.getElementById('btn-logIn').addEventListener('click', () => {
         var elements = document.getElementsByClassName('logInHide');
@@ -61,8 +111,7 @@ export function setListeners() {
         if (document.getElementById('user').value == 'user' && document.getElementById('pass').value == 'user') {
             localStorage.setItem('user', document.getElementById('user').value);
             localStorage.setItem('pass', document.getElementById('pass').value);
-            // window.location.href = '../index.html';
-            alert('Bienvenido ' + localStorage.getItem('user'));
+            window.location.href = 'http://localhost:3000/resena';
         } else {
             alert('Usuario o contraseña incorrectos');
             document.getElementById('user').value = '';

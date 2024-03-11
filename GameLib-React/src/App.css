@@ -59,57 +59,6 @@ hr {
   object-fit: cover;
 }
 
-.top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  transition: all 0.3s ease;
-}
-
-.top:hover {
-  background: linear-gradient(to bottom, #000000, #00000000);
-}
-
-.top .top__opciones {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 75%;
-}
-
-.top__opciones-right {
-  margin-left: 100px;
-}
-
-.top .top__opciones a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.top .top__opciones a p {
-  margin-left: 10px;
-  color: #fff;
-}
-
-.top .top__opciones button {
-  text-decoration: none;
-  background: none;
-}
-
-.opcion {
-  color: #fff;
-  font-size: 1.1rem;
-}
-
-.opcion:hover {
-  color: #b4b4b4;
-}
-
 .cuerpo {
   display: flex;
   flex-direction: column;
