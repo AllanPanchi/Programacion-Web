@@ -89,6 +89,7 @@
     color: #333;
     appearance: none;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .select:focus {

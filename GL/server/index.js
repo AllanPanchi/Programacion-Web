@@ -61,8 +61,7 @@ app.post('/resena', (req, res) => {
     });
 });
 
-// Update
-app.put('/resena', (req, res) => {
+app.put('/update', (req, res) => {
     const user = req.body.user;
     const newJuego = req.body.newJuego;
     const newTitulo = req.body.newTitulo;

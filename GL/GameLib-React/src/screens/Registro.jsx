@@ -6,6 +6,15 @@ function Registro() {
 
     const [user, setUser] = useState('');
     const [pass, setPass] = useState('');
+    const [usuarios, setUsuarios] = useState([]);
+
+    const getUsuarios = () => {
+        Axios.get('http://localhost:3001/usuarios').then((response) => {
+            setUsuarios(response.data);
+        }).catch(() => {
+            console.log('error');
+        });
+    }
 
     const add = () => {
         Axios.post('http://localhost:3001/create', {
@@ -26,11 +35,17 @@ function Registro() {
             alert('Campos vacíos');
             return;
         }
+        if(usuarios.find((usuario) => usuario.user === userI.value) != null){
+            alert('Usuario ya registrado');
+            return;
+        }
         add();
         alert('Usuario registrado');
         userI.value = '';
         passI.value = '';
     }
+
+    getUsuarios();
 
     return (
         <>
